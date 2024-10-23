@@ -1,18 +1,18 @@
 let username = prompt("your username")
 let password = prompt("your password")
 
-function isValidAccount(username, password) {
-    if (password.length < 8 ){
-        return false;
-     } else if (password.includes(username)){
-        return false;
-     } else if (password.includes(" ")){
-        return false; 
-     } else { 
-        return true;
-     }
-    }
 
+function isValidAccount(username, password) {
+    if (password.lenght < 8){
+        return false;
+    } else if (password.includes (username)){
+        return false;
+    } else if (password.includes(" ")) {
+        return false;
+    } else {
+        return true;
+    }
+}
 console.log(isValidAccount(username))
 console.log(isValidAccount(password))
 
